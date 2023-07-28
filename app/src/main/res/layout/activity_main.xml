@@ -149,7 +149,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_below="@id/btnBounce"
-            android:text="Sequential Animation" />
+            android:text="Sequential" />
 
         <Button
             android:id="@+id/btnTogether"
@@ -157,7 +157,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/btnSequential"
             android:layout_margin="5dp"
-            android:text="Together Animation" />
+            android:text="Together" />
 
         <TextView
             android:layout_width="wrap_content"

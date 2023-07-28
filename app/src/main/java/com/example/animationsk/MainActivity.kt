@@ -9,17 +9,17 @@ import com.example.animationsk.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-    val fadeout=animation(R.anim.fadeout)
-    val fadein=animation(R.anim.fadein)
-    val zoomout=animation(R.anim.zoom_out)
-    val zoomin=animation(R.anim.zoom_in)
-    val rotate=animation(R.anim.rotate_clockwise)
-    val move=animation(R.anim.move)
-    val sequential=animation(R.anim.sqenecial)
-    val together=animation(R.anim.together)
-    val slideup=animation(R.anim.silde_up)
-    val slidedown=animation(R.anim.slide_down)
-    val bounce=animation(R.anim.bounce)
+    private val fadeout=animation(R.anim.fadeout)
+    private val fadein=animation(R.anim.fadein)
+    private val zoomout=animation(R.anim.zoom_out)
+    private val zoomin=animation(R.anim.zoom_in)
+    private val rotate=animation(R.anim.rotate_clockwise)
+    private val move=animation(R.anim.move)
+    private val sequential=animation(R.anim.sqenecial)
+    private val together=animation(R.anim.together)
+    private val slideup=animation(R.anim.silde_up)
+    private val slidedown=animation(R.anim.slide_down)
+    private val bounce=animation(R.anim.bounce)
 
 
 
@@ -86,10 +86,9 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-
     }
 
-    fun animation(value:Int):Animation
+    private fun animation(value:Int):Animation
     {
         var anim= AnimationUtils.loadAnimation(this,value)
             return anim
